@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "604418275490",
+    "firebase_url": "https://prod-house-citizen.firebaseio.com",
+    "project_id": "prod-house-citizen",
+    "storage_bucket": "prod-house-citizen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604418275490:android:6b06848a956d161ebd3ffb",
+        "android_client_info": {
+          "package_name": "com.house.citizen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604418275490-u5bndc82ah55na4g3ojt93uuopqkaar6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.house.citizen",
+            "certificate_hash": "c0c7089eca63fc3775bf2f9791260fbabfe46dee"
+          }
+        },
+        {
+          "client_id": "604418275490-s5pej3de4afbl1voqqlrlelilepg4k46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJuJcdu03jrFtOjTm13U6J_uO2LafKoNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604418275490-s5pej3de4afbl1voqqlrlelilepg4k46.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "604418275490-83fadcgjh20lhsq07q4dlfuia31bvl0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.house.citizen"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

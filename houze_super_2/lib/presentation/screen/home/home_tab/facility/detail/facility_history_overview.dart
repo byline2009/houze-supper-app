@@ -1,0 +1,102 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:houze_super/domain/index.dart';
+import 'package:houze_super/middle/model/facility/index.dart';
+import 'package:houze_super/presentation/common_widgets/widget_booking_item.dart';
+import 'package:houze_super/presentation/index.dart';
+import 'package:houze_super/presentation/screen/home/home_tab/facility/detail/history/widget_empty_history.dart';
+import 'package:intl/intl.dart';
+import 'history/sc_facility_history.dart';
+
+class FacilityHistoriesScreen extends StatelessWidget {
+  final BuildContext? parentContext;
+  final String id;
+  final FacilityDetailModel? facilityDetail;
+  FacilityHistoriesScreen(
+      {Key? key,
+      this.parentContext,
+      required this.id,
+      required this.facilityDetail})
+      : super(key: key);
+
+  final facilityBloc = FacilityBloc();
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocBuilder<FacilityBloc, FacilityState>(
+      bloc: facilityBloc,
+      builder: (ctx, state) {
+        if (state is FacilityInitial) {
+          facilityBloc.add(FacilityGetHistoryEvent(id: id));
+        }
+
+        if (state is FacilityLoadHistoriesInProgress) {
+          return Center(child: CupertinoActivityIndicator());
+        }
+
+        if (state is FacilityLoadHistoriesSuccess) {
+          if (state.result.length == 0) {
+            return EmptyHistory(parentContext: parentContext);
+          }
+          return AnimationLimiter(
+            child: Column(
+              children: [
+                WidgetBoxesContainer(
+                  title: LocalizationsUtil.of(parentContext)
+                      .translate('recently_bookings'),
+                  hasLine: false,
+                  padding: const EdgeInsets.all(20),
+                  styleTitle: AppFonts.bold16,
+                  action: WidgetTextBase.textTopRight(
+                    LocalizationsUtil.of(parentContext).translate('see_all'),
+                    () {
+                      AppRouter.pushDialog(
+                          parentContext!,
+                          AppRouter.FACILITY_HISTORY_PAGE,
+                          FacilityHistoryScreenArgument(
+                              facility: facilityDetail));
+                    },
+                  ),
+                  child: SizedBox.shrink(),
+                ),
+                ListView.builder(
+                  padding: const EdgeInsets.all(0),
+                  shrinkWrap: true,
+                  physics: const BouncingScrollPhysics(),
+                  itemCount: state.result.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    FacilityHistoryModel item = state.result[index];
+                    return GestureDetector(
+                      onTap: () {
+                        if (parentContext != null)
+                          AppRouter.pushDialog(
+                              parentContext!,
+                              AppRouter.FACILITY_BOOKING_DETAIL_PAGE,
+                              FacilityBookingDetailScreenArgument(
+                                  id: item.id!));
+                      },
+                      child: Padding(
+                        key: Key(item.id!),
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: BookingRowData(
+                          title: "${item.facilitySlotName}",
+                          date:
+                              "${item.startTime} - ${item.endTime}, ${DateFormat('dd/MM/yyyy').format(DateTime.parse(item.date!))}",
+                          status: BookingRowData.statusOrder(
+                              parentContext, item.status),
+                          statusCode: item.status,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ],
+            ),
+          );
+        }
+        return SizedBox.shrink();
+      },
+    );
+  }
+}

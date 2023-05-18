@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
+    <rect width="22" height="22" fill="#6001D2" rx="3"/>
+    <path fill="#fff" fill-rule="evenodd" d="M8.085 14.468l-3.793-3.732L3 11.998 8.085 17 19 6.262 17.718 5l-9.633 9.468z" clip-rule="evenodd"/>
+    <mask id="ujx7c0dmaa" width="16" height="12" x="3" y="5" maskUnits="userSpaceOnUse">
+        <path fill="#fff" fill-rule="evenodd" d="M8.085 14.468l-3.793-3.732L3 11.998 8.085 17 19 6.262 17.718 5l-9.633 9.468z" clip-rule="evenodd"/>
+    </mask>
+</svg>

@@ -1,0 +1,253 @@
+name: houze_super
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 2.1.4+147
+
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+
+  # configure environment
+  flutter_dotenv: ^2.1.0
+
+  #otp
+  pin_code_text_field: ^1.7.1
+
+  # BLoC
+  flutter_bloc: ^6.0.6
+
+  path_provider: ^1.6.27
+  path: ^1.7.0
+  rxdart: 0.25.0
+  #format date time and other formats
+  intl: ^0.16.1
+  #draw SVG files
+  flutter_svg: ^0.18.0
+
+  # Data
+  equatable: ^1.2.6
+  shared_preferences: ^0.5.8
+  dio: ^3.0.9
+  jose: ^0.2.1+1
+  synchronized: ^2.2.0+2
+  decimal: ^0.3.0
+
+  #offline
+  sqflite: ^1.3.2+2
+
+  # health: ^3.0.3
+
+  # camera: ^0.6.0
+  image_cropper: ^1.3.1
+  flutter_spinkit: ^4.1.2+1
+  flutter_screenutil: ^2.3.1
+  # cache
+  cached_network_image: ^2.5.0
+  flutter_cache_manager: ^2.1.2
+
+  image_gallery_saver: 1.6.8
+  flutter_staggered_animations: ^0.1.2
+  flutter_staggered_grid_view: ^0.3.2
+  christian_picker_image: ^0.1.16
+  flutter_image_compress: ^0.7.0
+  auto_size_text: ^2.1.0
+  photo_view: ^0.10.3
+  flutter_app_badger: ^1.1.2
+  webview_flutter: ^1.0.7
+  dotted_border: ^1.0.6
+  worker_manager: 2.2.3
+  uni_links: ^0.4.0
+  image_picker: ^0.6.7+22
+  video_player: ^1.0.1
+  video_compress: ^2.1.1
+  flutter_video_info: ^1.1.0
+  flutter_parsed_text: ^1.2.5
+
+  # expandable: ^4.1.4
+
+  #rating
+  flutter_rating_bar: ^3.0.1+1
+
+  # call
+  url_launcher: ^5.6.0
+  #linkable: ^1.0.7
+
+  # map
+  google_maps_flutter: ^1.2.0
+  app_settings: ^3.0.1
+  geolocator: ^6.2.1
+  # screen size
+
+  # scan qr
+  qr_flutter: ^3.2.0
+
+  # slider widget
+  carousel_slider: ^2.2.1
+
+  syncfusion_flutter_charts: ^18.3.44
+
+  # responsive
+  responsive: ^0.2.3+4
+
+  image: ^2.1.19
+
+  timer_count_down: ^1.0.4+1
+
+  # redirect users to an app page in Google Play Store and Apple App Store.
+  store_redirect: ^1.0.2
+
+  # translator
+  translator: ^0.1.5
+
+  #calendar
+  table_calendar: ^2.2.3
+  sliding_up_panel: ^1.0.2
+
+  # draw voucher
+  path_drawing: ^0.4.1+1
+
+  # coutry code
+  country_code_picker: ^1.7.0
+
+  background_locator:
+    git:
+      url: git@github.com:houzegroup/background_locator.git
+  event_bus: ^1.1.1
+
+  socket_io_client: ^0.9.12
+  # map xml
+  gpx: ^1.1.1
+
+  lottie: ^0.7.0+1
+  fluttertoast: ^7.1.8
+
+  permission_handler: ^5.1.0+2
+
+  firebase_analytics: ^7.0.1
+  get_it: ^4.0.2
+
+  #payment sdk
+  encrypt: 4.1.0
+  houzepayoosdk:
+    git:
+      url: git@github.com:houzegroup/flutter_payoo.git
+      ref: e7636a5f83ffab7b1abebe899b558ecce7494464
+
+  # houze_payme_sdk:
+  #   git:
+  #     url: git@github.com:houzegroup/flutter_payme.git
+  #     ref: 77de09767292bd830e4910d527010040055807a4
+
+  connectivity_plus:
+    git:
+      url: git@github.com:houzegroup/connectivity_plus.git
+
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: AppIcons
+      fonts:
+        - asset: assets/fonts/AppIcons.ttf
+
+    - family: SFProDisplay
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Regular.otf
+        - asset: assets/fonts/SF-Pro-Display-Medium.otf
+          weight: 500
+        - asset: assets/fonts/SF-Pro-Display-Semibold.otf
+          weight: 600
+        - asset: assets/fonts/SF-Pro-Display-Bold.otf
+          weight: 700
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - .env.dev
+    - .env.prod
+    - assets/
+    - assets/images/
+    - assets/images/2.0x/
+    - assets/images/3.0x/
+    - assets/images/payment/
+    - assets/images/pointInfo/
+    - assets/svg/
+    - assets/svg/gender/
+    - assets/svg/404/
+    - assets/svg/widgets/
+    - assets/svg/login/
+    - assets/svg/parking/
+    - assets/svg/home/
+    - assets/svg/icon/
+    - assets/svg/comingsoon/
+    - assets/svg/icon/404/
+    - assets/svg/icon/status/
+    - assets/svg/icon/service/
+    - assets/svg/icon/booking/
+    - assets/svg/mailbox/
+    - assets/svg/sell/
+    - assets/svg/feed/
+    - assets/svg/ticket/
+    - assets/svg/rating/
+    - assets/svg/profile/
+    - assets/svg/ekyc/
+    - assets/svg/fee/
+    - assets/svg/community/
+    - assets/svg/payment/
+    - assets/svg/pointInfo/

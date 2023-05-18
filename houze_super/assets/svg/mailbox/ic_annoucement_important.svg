@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40">
+    <defs>
+        <linearGradient id="paint0_linear" x1="20" x2="20" y1="0" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FAF6FF"/>
+            <stop offset="1" stop-color="#DEC7FF"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear" x1="18.594" x2="18.594" y1="8" y2="29.094" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#725EF6"/>
+            <stop offset="1" stop-color="#6001D1"/>
+        </linearGradient>
+    </defs>
+    <rect width="40" height="40" fill="url(#paint0_linear)" rx="20"/>
+    <path fill="#fff" d="M13.672 22.063h-2.813c-.388 0-.703.314-.703.703v7.125c0 1.163.946 2.109 2.11 2.109 1.163 0 2.109-.946 2.109-2.11v-7.124c0-.389-.315-.703-.703-.703zm14.812-7.032V9.406c-.168 0-.323.07-.464.183-.07.056-6.215 5.442-12.192 5.442-.394 0-.703.31-.703.703v5.625c0 .394.31.703.703.703 5.977 0 12.122 5.386 12.192 5.443.127.126.296.183.464.183v-5.625c1.94 0 3.516-1.578 3.516-3.516 0-1.939-1.576-3.516-3.516-3.516z"/>
+    <path fill="url(#paint1_linear)" d="M15.828 13.625H8.703c-.389 0-.703.315-.703.703v8.438c0 .388.314.703.703.703h7.125c.389 0 .703-.315.703-.703v-8.438c0-.388-.314-.703-.703-.703zM28.484 8c-.388 0-.703.314-.703.703v19.688c0 .388.315.703.703.703.389 0 .703-.315.703-.703V8.703c0-.389-.314-.703-.703-.703z"/>
+    <rect width="17.143" height="17.143" x="21.429" y="21.429" fill="#fff" rx="8.571"/>
+    <path fill="#FFD154" fill-rule="evenodd" d="M29.99 20C24.47 20 20 24.48 20 30s4.47 10 9.99 10C35.52 40 40 35.52 40 30s-4.48-10-10.01-10zm4.24 16L30 33.45 25.77 36l1.12-4.81-3.73-3.23 4.92-.42L30 23l1.92 4.53 4.92.42-3.73 3.23L34.23 36z" clip-rule="evenodd"/>
+    <mask id="ajow3t4lxa" width="20" height="20" x="20" y="20" maskUnits="userSpaceOnUse">
+        <path fill="#fff" fill-rule="evenodd" d="M29.99 20C24.47 20 20 24.48 20 30s4.47 10 9.99 10C35.52 40 40 35.52 40 30s-4.48-10-10.01-10zm4.24 16L30 33.45 25.77 36l1.12-4.81-3.73-3.23 4.92-.42L30 23l1.92 4.53 4.92.42-3.73 3.23L34.23 36z" clip-rule="evenodd"/>
+    </mask>
+</svg>

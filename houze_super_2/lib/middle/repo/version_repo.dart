@@ -1,0 +1,12 @@
+import 'package:houze_super/middle/api/version_api.dart';
+import 'package:houze_super/middle/model/version_model.dart';
+
+class VersionRepository {
+  final versionAPI = VersionAPI();
+
+  VersionRepository();
+
+  Future<VersionModel> getVersion() async {
+    return await versionAPI.getVersion();
+  }
+}

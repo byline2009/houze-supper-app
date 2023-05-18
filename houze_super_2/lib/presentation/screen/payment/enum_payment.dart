@@ -1,0 +1,3 @@
+enum EnumPaymentScreen {
+  Order, History
+}
